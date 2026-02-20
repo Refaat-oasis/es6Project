@@ -6,5 +6,9 @@
     {
         "email": "admin@myshop.com",
         "password": "admin"
+    },
+    {
+        "email": "ahta601@gmail.com",
+        "password": "ahmed@12"
     }
 ]

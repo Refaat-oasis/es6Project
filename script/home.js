@@ -193,18 +193,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const addToCart = (product) => {
         const existingItem = cart.find(item => item.id === product.id);
-        if (existingItem) {
-            existingItem.quantity += 1;
+        const currentQtyInCart = existingItem ? existingItem.quantity : 0;
+
+        if (currentQtyInCart < product.quantity) {
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    quantity: 1
+                });
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartCount();
+            alert(`${product.name} added to cart!`);
         } else {
-            cart.push({
-                id: product.id,
-                name: product.name,
-                price: product.price,
-                quantity: 1
-            });
+            alert(`Sorry, only ${product.quantity} items available in stock.`);
         }
-        localStorage.setItem("cart", JSON.stringify(cart));
-        updateCartCount();
     };
 
     const updateCartCount = () => {

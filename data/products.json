@@ -5,7 +5,8 @@
         "brand": "TechMaster",
         "price": 1200,
         "type": "laptop",
-        "description": "High-performance gaming laptop with RTX 4060 and 32GB RAM."
+        "description": "High-performance gaming laptop with RTX 4060 and 32GB RAM.",
+        "quantity": 10
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "brand": "ProGamer",
         "price": 50,
         "type": "accessory",
-        "description": "Ultra-lightweight wireless mouse with customizable RGB."
+        "description": "Ultra-lightweight wireless mouse with customizable RGB.",
+        "quantity": 10
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "brand": "Intel",
         "price": 450,
         "type": "cpu",
-        "description": "Latest generation Intel i9 processor for extreme multitasking."
+        "description": "Latest generation Intel i9 processor for extreme multitasking.",
+        "quantity": 10
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "brand": "StoragePro",
         "price": 150,
         "type": "hard",
-        "description": "Fast storage solution for quick boot times and game loading."
+        "description": "Fast storage solution for quick boot times and game loading.",
+        "quantity": 10
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "brand": "TechMaster",
         "price": 80,
         "type": "accessory",
-        "description": "Blue switch mechanical keyboard with tactile feedback."
+        "description": "Blue switch mechanical keyboard with tactile feedback.",
+        "quantity": 10
     },
     {
         "id": 6,
@@ -45,7 +50,8 @@
         "brand": "Lumina",
         "price": 800,
         "type": "laptop",
-        "description": "Light and sleek laptop perfect for work and productivity."
+        "description": "Light and sleek laptop perfect for work and productivity.",
+        "quantity": 10
     },
     {
         "id": 7,
@@ -53,7 +59,8 @@
         "brand": "AMD",
         "price": 300,
         "type": "cpu",
-        "description": "Reliable 8-core processor for smooth performance."
+        "description": "Reliable 8-core processor for smooth performance.",
+        "quantity": 10
     },
     {
         "id": 8,
@@ -61,7 +68,8 @@
         "brand": "StoragePro",
         "price": 100,
         "type": "hard",
-        "description": "Large capacity external drive for backups and data storage."
+        "description": "Large capacity external drive for backups and data storage.",
+        "quantity": 10
     },
     {
         "id": 9,
@@ -69,7 +77,8 @@
         "brand": "VisionEdge",
         "price": 400,
         "type": "accessory",
-        "description": "Crystal clear display with HDR support."
+        "description": "Crystal clear display with HDR support.",
+        "quantity": 10
     },
     {
         "id": 10,
@@ -77,7 +86,8 @@
         "brand": "AudioPure",
         "price": 250,
         "type": "accessory",
-        "description": "Premium sound quality with active noise cancellation."
+        "description": "Premium sound quality with active noise cancellation.",
+        "quantity": 10
     },
     {
         "id": 11,
@@ -85,7 +95,8 @@
         "brand": "StreamX",
         "price": 120,
         "type": "accessory",
-        "description": "Pro-grade webcam for streaming and video calls."
+        "description": "Pro-grade webcam for streaming and video calls.",
+        "quantity": 10
     },
     {
         "id": 12,
@@ -93,7 +104,8 @@
         "brand": "AMD",
         "price": 550,
         "type": "cpu",
-        "description": "The ultimate gaming and content creation processor."
+        "description": "The ultimate gaming and content creation processor.",
+        "quantity": 10
     },
     {
         "id": 13,
@@ -101,7 +113,8 @@
         "brand": "FlashGo",
         "price": 90,
         "type": "hard",
-        "description": "Expand your storage for steam deck or switch."
+        "description": "Expand your storage for steam deck or switch.",
+        "quantity": 10
     },
     {
         "id": 14,
@@ -109,7 +122,8 @@
         "brand": "ComfortSeat",
         "price": 350,
         "type": "accessory",
-        "description": "Ergonomic chair designed for long gaming sessions."
+        "description": "Ergonomic chair designed for long gaming sessions.",
+        "quantity": 10
     },
     {
         "id": 15,
@@ -117,7 +131,8 @@
         "brand": "Apple",
         "price": 1100,
         "type": "laptop",
-        "description": "Incredibly thin and fast laptop with M2 chip."
+        "description": "Incredibly thin and fast laptop with M2 chip.",
+        "quantity": 10
     },
     {
         "id": 16,
@@ -125,7 +140,8 @@
         "brand": "AMD",
         "price": 950,
         "type": "accessory",
-        "description": "Massive performance for 4K gaming."
+        "description": "Massive performance for 4K gaming.",
+        "quantity": 10
     },
     {
         "id": 17,
@@ -133,7 +149,8 @@
         "brand": "SpeedMem",
         "price": 130,
         "type": "accessory",
-        "description": "High-speed memory for next-gen platforms."
+        "description": "High-speed memory for next-gen platforms.",
+        "quantity": 10
     },
     {
         "id": 18,
@@ -141,7 +158,8 @@
         "brand": "LinkMaster",
         "price": 60,
         "type": "accessory",
-        "description": "Connect all your peripherals with one port."
+        "description": "Connect all your peripherals with one port.",
+        "quantity": 10
     },
     {
         "id": 19,
@@ -149,7 +167,8 @@
         "brand": "FlashGo",
         "price": 110,
         "type": "hard",
-        "description": "Rugged and fast external storage."
+        "description": "Rugged and fast external storage.",
+        "quantity": 10
     },
     {
         "id": 20,
@@ -157,7 +176,8 @@
         "brand": "TechMaster",
         "price": 300,
         "type": "accessory",
-        "description": "Stay connected and track your health."
+        "description": "Stay connected and track your health.",
+        "quantity": 10
     },
     {
         "id": 21,
@@ -165,7 +185,8 @@
         "brand": "StayCool",
         "price": 30,
         "type": "accessory",
-        "description": "Protect your laptop from overheating."
+        "description": "Protect your laptop from overheating.",
+        "quantity": 10
     },
     {
         "id": 22,
@@ -173,7 +194,8 @@
         "brand": "PowerUp",
         "price": 25,
         "type": "accessory",
-        "description": "Fast wireless charging for your phone."
+        "description": "Fast wireless charging for your phone.",
+        "quantity": 10
     },
     {
         "id": 23,
@@ -181,7 +203,8 @@
         "brand": "BuildIt",
         "price": 600,
         "type": "laptop",
-        "description": "Perfect desktop for students and home office."
+        "description": "Perfect desktop for students and home office.",
+        "quantity": 10
     },
     {
         "id": 24,
@@ -189,7 +212,8 @@
         "brand": "ProGamer",
         "price": 180,
         "type": "accessory",
-        "description": "Budget graphics card for casual gaming."
+        "description": "Budget graphics card for casual gaming.",
+        "quantity": 10
     },
     {
         "id": 25,
@@ -197,7 +221,8 @@
         "brand": "Intel",
         "price": 280,
         "type": "accessory",
-        "description": "High-end motherboard for 13th/14th gen Intel CPUs."
+        "description": "High-end motherboard for 13th/14th gen Intel CPUs.",
+        "quantity": 10
     },
     {
         "id": 26,
@@ -205,7 +230,8 @@
         "brand": "StayCool",
         "price": 140,
         "type": "accessory",
-        "description": "Quiet and efficient AIO cooling."
+        "description": "Quiet and efficient AIO cooling.",
+        "quantity": 10
     },
     {
         "id": 27,
@@ -213,7 +239,8 @@
         "brand": "AudioPure",
         "price": 70,
         "type": "accessory",
-        "description": "Portable speaker with deep bass."
+        "description": "Portable speaker with deep bass.",
+        "quantity": 10
     },
     {
         "id": 28,
@@ -221,7 +248,8 @@
         "brand": "StreamX",
         "price": 160,
         "type": "accessory",
-        "description": "Stream your console gameplay in high quality."
+        "description": "Stream your console gameplay in high quality.",
+        "quantity": 10
     },
     {
         "id": 29,
@@ -229,7 +257,8 @@
         "brand": "StoragePro",
         "price": 170,
         "type": "hard",
-        "description": "Store your entire movie and photo library."
+        "description": "Store your entire movie and photo library.",
+        "quantity": 10
     },
     {
         "id": 30,
@@ -237,6 +266,7 @@
         "brand": "ComfortSeat",
         "price": 45,
         "type": "accessory",
-        "description": "Vertical mouse to reduce wrist strain."
+        "description": "Vertical mouse to reduce wrist strain.",
+        "quantity": 10
     }
 ]

@@ -31,17 +31,33 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    const productImages = [
+        "../data/images/slider/7acaa884-0cf3-4d53-aea7-945eae1e6452._SL300__.jfif",
+        "../data/images/slider/OIP (1).webp",
+        "../data/images/slider/OIP (2).webp",
+        "../data/images/slider/OIP (3).webp",
+        "../data/images/slider/OIP.webp"
+    ];
+
     const renderProductDetails = (product) => {
         productContainer.textContent = "";
 
         const detailsDiv = document.createElement("div");
         detailsDiv.className = "product-info";
 
-        const imgPlaceholder = document.createElement("div");
-        imgPlaceholder.className = "product-image-placeholder";
-        const icon = document.createElement("i");
-        icon.className = getIconForType(product.type);
-        imgPlaceholder.appendChild(icon);
+        const backBtn = document.createElement("button");
+        backBtn.className = "back-btn";
+        backBtn.innerHTML = '<i class="fas fa-arrow-left"></i> Back to Shop';
+        backBtn.addEventListener("click", () => {
+            window.location.href = "home.html";
+        });
+
+        const imgContainer = document.createElement("div");
+        imgContainer.className = "product-image-container-detail";
+        const img = document.createElement("img");
+        img.src = productImages[product.id % productImages.length];
+        img.alt = product.name;
+        imgContainer.appendChild(img);
 
         const title = document.createElement("h2");
         title.innerText = product.name;
@@ -58,51 +74,58 @@ document.addEventListener("DOMContentLoaded", () => {
         price.className = "product-price";
         price.innerText = `$${product.price}`;
 
+        const stock = document.createElement("p");
+        stock.className = "product-stock";
+        stock.innerText = `Available: ${product.quantity}`;
+        if (product.quantity <= 0) {
+            stock.style.color = "red";
+            stock.innerText = "Out of Stock";
+        }
+
         const desc = document.createElement("p");
         desc.className = "product-description";
         desc.innerText = product.description;
 
         const btn = document.createElement("button");
         btn.className = "add-to-cart-btn";
-        btn.innerText = "Add to Cart";
+        btn.innerText = product.quantity > 0 ? "Add to Cart" : "Out of Stock";
+        btn.disabled = product.quantity <= 0;
         btn.addEventListener("click", () => addToCart(product));
 
-        detailsDiv.appendChild(imgPlaceholder);
+        detailsDiv.appendChild(backBtn);
+        detailsDiv.appendChild(imgContainer);
         detailsDiv.appendChild(title);
         detailsDiv.appendChild(brand);
         detailsDiv.appendChild(type);
         detailsDiv.appendChild(price);
+        detailsDiv.appendChild(stock);
         detailsDiv.appendChild(desc);
         detailsDiv.appendChild(btn);
 
         productContainer.appendChild(detailsDiv);
     };
 
-    const getIconForType = (type) => {
-        switch (type) {
-            case "laptop": return "fas fa-laptop";
-            case "cpu": return "fas fa-microchip";
-            case "hard": return "fas fa-hdd";
-            case "accessory": return "fas fa-keyboard";
-            default: return "fas fa-box";
-        }
-    };
-
     const addToCart = (product) => {
         const existingItem = cart.find(item => item.id === product.id);
-        if (existingItem) {
-            existingItem.quantity += 1;
+        const currentQtyInCart = existingItem ? existingItem.quantity : 0;
+
+        if (currentQtyInCart < product.quantity) {
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    quantity: 1
+                });
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartCount();
+            alert(`${product.name} added to cart!`);
         } else {
-            cart.push({
-                id: product.id,
-                name: product.name,
-                price: product.price,
-                quantity: 1
-            });
+            alert(`Sorry, only ${product.quantity} items available in stock.`);
         }
-        localStorage.setItem("cart", JSON.stringify(cart));
-        updateCartCount();
-        alert(`${product.name} added to cart!`);
     };
 
     const updateCartCount = () => {

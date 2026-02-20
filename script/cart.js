@@ -82,7 +82,22 @@ document.addEventListener("DOMContentLoaded", () => {
         return div;
     };
 
-    const updateQuantity = (index, change) => {
+    const updateQuantity = async (index, change) => {
+        const item = cart[index];
+        if (change > 0) {
+            try {
+                const response = await fetch("../data/products.json");
+                const products = await response.json();
+                const product = products.find(p => p.id === item.id);
+                if (product && item.quantity >= product.quantity) {
+                    alert(`Sorry, only ${product.quantity} items available in stock.`);
+                    return;
+                }
+            } catch (error) {
+                console.error("Error checking stock:", error);
+            }
+        }
+
         cart[index].quantity += change;
         if (cart[index].quantity <= 0) {
             cart.splice(index, 1);
