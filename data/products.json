@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "name": "Gaming Laptop X1",
+        "brand": "TechMaster",
+        "price": 1200,
+        "type": "laptop",
+        "description": "High-performance gaming laptop with RTX 4060 and 32GB RAM."
+    },
+    {
+        "id": 2,
+        "name": "Wireless Gaming Mouse",
+        "brand": "ProGamer",
+        "price": 50,
+        "type": "accessory",
+        "description": "Ultra-lightweight wireless mouse with customizable RGB."
+    },
+    {
+        "id": 3,
+        "name": "Core i9 Processor",
+        "brand": "Intel",
+        "price": 450,
+        "type": "cpu",
+        "description": "Latest generation Intel i9 processor for extreme multitasking."
+    },
+    {
+        "id": 4,
+        "name": "2TB NVMe SSD",
+        "brand": "StoragePro",
+        "price": 150,
+        "type": "hard",
+        "description": "Fast storage solution for quick boot times and game loading."
+    },
+    {
+        "id": 5,
+        "name": "Mechanical Keyboard",
+        "brand": "TechMaster",
+        "price": 80,
+        "type": "accessory",
+        "description": "Blue switch mechanical keyboard with tactile feedback."
+    },
+    {
+        "id": 6,
+        "name": "Office Laptop Slim",
+        "brand": "Lumina",
+        "price": 800,
+        "type": "laptop",
+        "description": "Light and sleek laptop perfect for work and productivity."
+    },
+    {
+        "id": 7,
+        "name": "AMD Ryzen 7",
+        "brand": "AMD",
+        "price": 300,
+        "type": "cpu",
+        "description": "Reliable 8-core processor for smooth performance."
+    },
+    {
+        "id": 8,
+        "name": "External 4TB HDD",
+        "brand": "StoragePro",
+        "price": 100,
+        "type": "hard",
+        "description": "Large capacity external drive for backups and data storage."
+    },
+    {
+        "id": 9,
+        "name": "27-inch 4K Monitor",
+        "brand": "VisionEdge",
+        "price": 400,
+        "type": "accessory",
+        "description": "Crystal clear display with HDR support."
+    },
+    {
+        "id": 10,
+        "name": "Noise Cancelling Headphones",
+        "brand": "AudioPure",
+        "price": 250,
+        "type": "accessory",
+        "description": "Premium sound quality with active noise cancellation."
+    },
+    {
+        "id": 11,
+        "name": "Webcam 4K Ultra",
+        "brand": "StreamX",
+        "price": 120,
+        "type": "accessory",
+        "description": "Pro-grade webcam for streaming and video calls."
+    },
+    {
+        "id": 12,
+        "name": "Ryzen 9 7950X",
+        "brand": "AMD",
+        "price": 550,
+        "type": "cpu",
+        "description": "The ultimate gaming and content creation processor."
+    },
+    {
+        "id": 13,
+        "name": "1TB Micro SD Card",
+        "brand": "FlashGo",
+        "price": 90,
+        "type": "hard",
+        "description": "Expand your storage for steam deck or switch."
+    },
+    {
+        "id": 14,
+        "name": "Gaming Chair Pro",
+        "brand": "ComfortSeat",
+        "price": 350,
+        "type": "accessory",
+        "description": "Ergonomic chair designed for long gaming sessions."
+    },
+    {
+        "id": 15,
+        "name": "MacBook Air M2",
+        "brand": "Apple",
+        "price": 1100,
+        "type": "laptop",
+        "description": "Incredibly thin and fast laptop with M2 chip."
+    },
+    {
+        "id": 16,
+        "name": "Radeon RX 7900 XTX",
+        "brand": "AMD",
+        "price": 950,
+        "type": "accessory",
+        "description": "Massive performance for 4K gaming."
+    },
+    {
+        "id": 17,
+        "name": "DDR5 32GB RAM Kit",
+        "brand": "SpeedMem",
+        "price": 130,
+        "type": "accessory",
+        "description": "High-speed memory for next-gen platforms."
+    },
+    {
+        "id": 18,
+        "name": "USB-C Hub 10-in-1",
+        "brand": "LinkMaster",
+        "price": 60,
+        "type": "accessory",
+        "description": "Connect all your peripherals with one port."
+    },
+    {
+        "id": 19,
+        "name": "Portable SSD 1TB",
+        "brand": "FlashGo",
+        "price": 110,
+        "type": "hard",
+        "description": "Rugged and fast external storage."
+    },
+    {
+        "id": 20,
+        "name": "Smart Watch Series 9",
+        "brand": "TechMaster",
+        "price": 300,
+        "type": "accessory",
+        "description": "Stay connected and track your health."
+    },
+    {
+        "id": 21,
+        "name": "Laptop Cooling Pad",
+        "brand": "StayCool",
+        "price": 30,
+        "type": "accessory",
+        "description": "Protect your laptop from overheating."
+    },
+    {
+        "id": 22,
+        "name": "Wireless Charger",
+        "brand": "PowerUp",
+        "price": 25,
+        "type": "accessory",
+        "description": "Fast wireless charging for your phone."
+    },
+    {
+        "id": 23,
+        "name": "Entry Level PC",
+        "brand": "BuildIt",
+        "price": 600,
+        "type": "laptop",
+        "description": "Perfect desktop for students and home office."
+    },
+    {
+        "id": 24,
+        "name": "GTX 1650 Graphics Card",
+        "brand": "ProGamer",
+        "price": 180,
+        "type": "accessory",
+        "description": "Budget graphics card for casual gaming."
+    },
+    {
+        "id": 25,
+        "name": "Motherboard Z790",
+        "brand": "Intel",
+        "price": 280,
+        "type": "accessory",
+        "description": "High-end motherboard for 13th/14th gen Intel CPUs."
+    },
+    {
+        "id": 26,
+        "name": "Liquid CPU Cooler",
+        "brand": "StayCool",
+        "price": 140,
+        "type": "accessory",
+        "description": "Quiet and efficient AIO cooling."
+    },
+    {
+        "id": 27,
+        "name": "Bluetooth Speaker",
+        "brand": "AudioPure",
+        "price": 70,
+        "type": "accessory",
+        "description": "Portable speaker with deep bass."
+    },
+    {
+        "id": 28,
+        "name": "Capture Card 4K",
+        "brand": "StreamX",
+        "price": 160,
+        "type": "accessory",
+        "description": "Stream your console gameplay in high quality."
+    },
+    {
+        "id": 29,
+        "name": "8TB Desktop Drive",
+        "brand": "StoragePro",
+        "price": 170,
+        "type": "hard",
+        "description": "Store your entire movie and photo library."
+    },
+    {
+        "id": 30,
+        "name": "Ergonomic Mouse",
+        "brand": "ComfortSeat",
+        "price": 45,
+        "type": "accessory",
+        "description": "Vertical mouse to reduce wrist strain."
+    }
+]

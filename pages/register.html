@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style/register.css'>
+
+</head>
+
+<body>
+
+    <main>
+        <section id="section1Image">
+            <img src="./../data/images/fb26fce600ef7804f9a5537f0c0a37ca.jpg" alt="Register Image">
+        </section>
+
+        <section id="section2Container">
+            <form action="./signin.html" method="get" id="registerForm">
+                <h2>Register</h2>
+                <br>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <span id="nameError" class="error-message"></span>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <span id="emailError" class="error-message"></span>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <span id="passwordError" class="error-message"></span>
+
+                <label for="passwordConfirmation">Confirm Password</label>
+                <input type="password" name="passwordConfirmation" id="passwordConfirmation"
+                    placeholder="Confirm your password">
+                <span id="passwordConfirmationError" class="error-message"></span>
+
+                <input type="submit" value="Register">
+
+            </form>
+        </section>
+
+
+        <script src='./../script/register.js'></script>
+
+    </main>
+
+</body>
+
+</html>

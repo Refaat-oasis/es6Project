@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+#section1Image {
+    flex: 1;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#section1Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#section2Container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+#registerForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#registerForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#registerForm input[type="text"],
+#registerForm input[type="email"],
+#registerForm input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.error-message {
+    display: block;
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+    min-height: 1.2em;
+    /* Reserve space to prevent jumping */
+}
+
+#registerForm input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#registerForm input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+header,
+footer {
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+footer {
+    border-top: 1px solid #dee2e6;
+    border-bottom: none;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}

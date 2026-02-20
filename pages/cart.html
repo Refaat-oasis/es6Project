@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop - Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="home.html" style="text-decoration: none;">
+                    <h1>My Shop</h1>
+                </a>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="signin.html" id="logout-link">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-container">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items" class="cart-items">
+                
+                <p class="empty-msg">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <div class="total-row">
+                    <span>Total:</span>
+                    <span id="total-price">$0</span>
+                </div>
+                <button id="buy-now-btn" class="buy-now-btn">Buy Now</button>
+            </div>
+        </section>
+
+        
+        <div id="success-overlay" class="success-overlay">
+            <div class="overlay-content">
+                <i class="fas fa-truck-moving truck-icon"></i>
+                <h3>Your order has been shipped!</h3>
+                <p>Redirecting to home page...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 My Shop. All rights reserved.</p>
+            <p>Contact: info@myshop.com | +1 234 567 890</p>
+        </div>
+    </footer>
+
+    <script src="../script/cart.js"></script>
+</body>
+
+</html>

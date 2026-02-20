@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>My Shop</h1>
+            </div>
+            <nav>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <a href="signin.html" id="logout-link">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slider-container" id="slider-container">
+                <div class="slide active" style="background-image: url('../data/images/slider/OIP (1).webp');">
+                    <div class="slide-content">
+                        <h2>Welcome to My Shop</h2>
+                        <p>Find the best electronics at unbeatable prices.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('../data/images/slider/OIP (2).webp');">
+                    <div class="slide-content">
+                        <h2>Latest Tech</h2>
+                        <p>Explore our new arrivals.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('../data/images/slider/OIP (3).webp');">
+                    <div class="slide-content">
+                        <h2>Quality Assured</h2>
+                        <p>Only the best for our customers.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('../data/images/slider/OIP.webp');">
+                    <div class="slide-content">
+                        <h2>Fast Shipping</h2>
+                        <p>Get your items in no time.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+        </section>
+
+        
+        <section class="products-area">
+            <div class="filters-top">
+                <h3>Filters</h3>
+                <div class="filters-row">
+                    <div class="filter-group">
+                        <label for="filter-search">Search</label>
+                        <input type="text" id="filter-search" placeholder="Search products...">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-brand">Brand</label>
+                        <select id="filter-brand">
+                            <option value="all">All Brands</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-type">Type</label>
+                        <select id="filter-type">
+                            <option value="all">All Types</option>
+                            <option value="accessory">Accessory</option>
+                            <option value="cpu">CPU</option>
+                            <option value="hard">Hard Drive</option>
+                            <option value="laptop">Laptop</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Price Range</label>
+                        <div class="price-input-row">
+                            <input type="range" id="filter-price" min="0" max="2000" step="50" value="2000">
+                            <span id="price-value">$2000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-list-container">
+                <div id="products-grid" class="products-grid">
+                    
+                </div>
+                <div class="pagination-container">
+                    <button id="show-more-btn" class="show-more-btn">Show More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 My Shop. All rights reserved.</p>
+            <p>Contact: info@myshop.com | +1 234 567 890</p>
+            <p>Designed by <a href="#">My Shop Team</a></p>
+        </div>
+    </footer>
+
+    
+    <button id="scroll-top" class="floating-btn" title="Scroll to Top"><i class="fas fa-arrow-up"></i></button>
+    <button id="scroll-bottom" class="floating-btn" title="Scroll to Bottom"><i class="fas fa-arrow-down"></i></button>
+
+    <script src="../script/home.js"></script>
+</body>
+
+</html>
